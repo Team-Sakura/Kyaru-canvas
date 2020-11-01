@@ -1,5 +1,9 @@
 const Canvas = require("canvas");
  class kyaru_canvas {
+     version()  {
+     return '1.0.0'
+     }
+
   async rank(args,message)  {
 return new Promise(async (resolve, reject) => {
  if(!args.level||isNaN(args.level)) throw new Error("Не указан аргумент level");
